@@ -17,3 +17,8 @@ gradle.bat
 
 # MacOS
 .DS_Store
+
+/bin/**
+/.vscode/settings.json
+/build.xml
+/package-lock.json
