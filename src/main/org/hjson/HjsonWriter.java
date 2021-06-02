@@ -155,9 +155,9 @@ class HjsonWriter {
     String[] lines=value.replace("\r", "").split("\n", -1);
 
     if (lines.length==1) {
-      tw.write(separator+"'''");
-      tw.write(lines[0]);
-      tw.write("'''");
+      tw.write(separator+"\"");
+      tw.write(JsonWriter.escapeString(lines[0]));
+      tw.write("\"");
     }
     else {
       level++;
